@@ -1,27 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- link para los archivois de hojas de estilo -CSS -->
+<!--1. estilo mediante un archivo externo  -->
+<link rel="stylesheet" href="./index.css">
     <title>Moulo 01- introuccion HTML</title>
-</head>
-<body>
-    
-    <header>
 
+    <!-- estilo dentro del archivo html -->
+    <style>
+h1{
+    color: red;
+    }
+    </style>
+  </head>
+  <body>
+    <!-- cabecera de la pagina -->
+    <!--etiquetas semanticas  -->
+    <header>
+        <!-- barra de navegacion -->
+      <nav>
+        <!-- listas desordenadas -->
+        <li>
+            <!--items de las listas  -->
+            <li>
+                <a href="./index.html">home</a> <!-- ruta relativa -->
+            </li>
+            <li>
+                <!-- ancla: navegar las paginas o archivos -->
+               <a href="./productos.html">productos</a>
+            </li>
+            <li>
+                <a href="./formulario.html">formulario</a>
+            </li>
+            <li>
+                <!-- ruta absoluta -->
+                <a 
+                href="https://digitalers.educacionit.com/Identity/Account/Login?ReturnUrl=%2F"
+                target="_blank">
+                <!--abre la pagina en una nueva pagina  -->
+                   Digitalers EIT</a>
+            </li>
+        </ul>
+      </nav>
     </header>
 
-       <nav>
-
-    </nav>
+    <!--  -->
 
     <main>
+<h1>
+    Estilo en la pagina html
+</h1>
 
+<!-- 3- estilo en linea o inline -->
+<p style="color: blue; font-size: 20px;">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, odit blanditiis? Incidunt, neque? Neque eius magni quisquam hic id deserunt? Praesentium aliquam, rem nostrum sint ea minima facere animi quibusdam?
+</p>
     </main>
 
     <footer>
 
     </footer>
-    
-</body>
+  </body>
 </html>
