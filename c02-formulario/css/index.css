@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(198, 238, 238);
+}
+
+li{  /* reglas de estilo para los item list */
+    list-style: none; /* quitamos los estilos a las listas */
+    float: right;  /* flotamos los elementos a la derecha' metodo antiguo */
+    margin-right: 25px;  /* damos un margen derecho de 25px */
+    border-top: 3px solid black;  /*agregamos un borde arriba del contenido  */
+    padding-top: 5px;  /* agregamos un relleno al contenido */
+}
+a{
+    text-decoration: none; /* quitamos el subrayado a las anclas */
+}
