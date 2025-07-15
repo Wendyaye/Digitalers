@@ -12,3 +12,15 @@ li{  /* reglas de estilo para los item list */
 a{
     text-decoration: none; /* quitamos el subrayado a las anclas */
 }
+#edad {  /* se muestra en bloque a los elementos en linea */
+display: block ;
+}
+h2{ /* se muestra en linea a los elementos en bloque */
+    display: inline;
+}
+
+
+
+
+
+
