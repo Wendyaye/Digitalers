@@ -1,0 +1,13 @@
+body{
+    background-color:#f2f2f2 ;
+ }
+/* selector de class-lo invoco con un . y el n ombre de la clase */
+ .iconosredes{
+
+     /*el ancho de un elemento  */
+     width: 100px;
+     /* el alto de un elemento */
+     height: 100px; 
+
+
+ }

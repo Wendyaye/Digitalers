@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <!-- link para los archivois de hojas de estilo -CSS -->
 <!--1. estilo mediante un archivo externo  -->
+<link rel="stylesheet" href="./css/general.css">
 <link rel="stylesheet" href="./index.css">
     <title>Moulo 01- introuccion HTML</title>
 
@@ -29,10 +30,10 @@ h1{
             </li>
             <li>
                 <!-- ancla: navegar las paginas o archivos -->
-               <a href="./productos.html">productos</a>
+               <a href="./page/productos.html">productos</a>
             </li>
             <li>
-                <a href="./formulario.html">formulario</a>
+                <a href="./page/formulario.html">formulario</a>
             </li>
             <li>
                 <!-- ruta absoluta -->
@@ -54,13 +55,53 @@ h1{
 </h1>
 
 <!-- 3- estilo en linea o inline -->
-<p style="color: blue; font-size: 20px;">
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, odit blanditiis? Incidunt, neque? Neque eius magni quisquam hic id deserunt? Praesentium aliquam, rem nostrum sint ea minima facere animi quibusdam?
-</p>
+             <p style="color: blue; font-size: 20px;">
+               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lee atentamente para la <a href="#firmar">firmar</a> , neque? Neque eius magni quisquam hic id deserunt? Praesentium aliquam, rem nostrum sint ea minima facere animi quibusdam?
+             </p>
+
+             <p>
+              Lorem ipsum, para <a href="./page/productos.html#pagar">Pagar</a>. Reprehenderit quos minima deleniti sit architecto ad exercitationem, nemo voluptatum accusamus autem ipsum, saepe necessitatibus. Reiciendis similique eius obcaecati magni voluptatibus sequi?
+             </p>
+
+             <p>
+              Lorem ipsum dolor, para sumar datos completa el <a href="./page/formulario.html">formulario</a>. Hic libero aspernatur unde. Rem nam architecto similique enim ut modi totam eligendi in, unde dolorum laborum, veritatis minima corrupti fuga eos?
+             </p>
+
+             <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptates illum ullam a provident ducimus aliquam et iure odit corporis ad veniam ratione, quo, laudantium necessitatibus, cupiditate voluptate optio. Amet!
+             </p>
+
+             <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto id illo, consectetur porro beatae natus amet eveniet qui. Autem numquam libero deserunt quod ipsam? Iste quia a veniam necessitatibus maiores?
+             </p>
+
+             <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis in vero corrupti, tenetur velit facere voluptatum nemo at excepturi? Cum amet, voluptatem eveniet laudantium dolore fuga et eligendi. Quos, optio!
+             </p>
+
+             <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias eum eos possimus voluptate velit adipisci modi quos aliquid sit fugiat voluptatibus quae cupiditate exercitationem, qui esse nesciunt et omnis corrupti.
+             </p>
+
+             <p id="firmar">
+              Firma de datos . Temporibus impedit illum ea repellat non? Nesciunt dignissimos consequuntur dolorem error corporis odio officiis nulla doloribus culpa, est, distinctio incidunt aut tempore.
+             </p>
     </main>
 
     <footer>
+        <!--etiqueta de direccion  -->
+        <address>
+             <p>
+               calle San Martin 250 casi San Juan
+             </p>
+        <!-- etiqueta comodin -->
+            <div>
 
+              <p>Facebook</p>
+        <!-- etiqueta para agregar imagenes -->
+           <img class="iconosredes" src="./assets/imagen/facebook.png" alt="icono de Facebook+">
+             </div>
+         </address>
     </footer>
   </body>
-</html>
+  </html>
