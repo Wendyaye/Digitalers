@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/diseno-web.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/index.css">
+    <!-- Tipografia de gogle fonts: opcion 1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Formulario</title>
 </head>
 <body>
@@ -24,40 +28,85 @@
         </nav>
     </header>
     <main>
-        <h1>
+        <h1 class="roboto"><!-- tipografia de google fonts -->
             Formulario
         </h1>
         <!-- etiqueta de formulario -->
-        <form action="formulario.js" method="post"> 
+        <form action="#" method="post"> 
             <!-- al archivo donde se envian los datos -->
             <!-- post metodo http para envio de datos -->
 
             <label for="nombre">Nombre</label> <!-- GIA PARA EL USER -->
-            <input type="text" name="nombre" id="nombre" placeholder="Pepe Perez"> <!-- tipo texto -->
+            <input type="text" name="nombre" id="nombre" placeholder="Pepe Perez" required> <!-- tipo texto -->
             <br><!-- salto de linea -->
             <label for="edad" id="labeledad">Edad:  </label>
-            <input type="number" name="edad" id="edad" placeholder="25" min="0" max="100"> 
+            <input type="number" name="edad" id="edad" placeholder="25" min="0" max="100" step="5"> 
+            <!-- step: paso con el que se suma la edad, por defecto de 1 en 1 -->
 
             <label for="nacimiento">Fecha de nacimiento: </label>
-            <input type="date" name="nacimiento" id="nacimiento">
+            <input type="date" name="nacimiento" id="nacimiento" required>
             <br>
 
             <label for="password">Password</label>
             <input type="password" name="password" id="password" minlength="5" maxlength="8">
             <br>
-
-            <label for="imagen">Foto de perfil</label>
-            <input type="file" name="imagen" id="imagen"> <!-- subir archivos -->
+            <label for="mes">Mes:</label>
+            <input type="month" name="mes" id="mes" required> <!-- dato obligatorio -->
             <br>
 
+            <label for="semana">Semana:</label>
+            <input type="week" name="semana" id="semana">
+            <br>
+
+            <label for="telefono">Telefono</label>
+            <input type="tel" name="telefono" id="telefono" pattern="[0-9]{9}"><!-- lo que esta permitido completar -->
+            <br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" pattern="[a-zA-Z0-9]">
+            <br>
+
+            <label for="provincia">Provincia</label>
+            <select name="provincia" id="provincia">
+                <option value="**Seleciona una opcion">Opcion</option>
+                <option value="Cordoba">Cordoba</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Santa fe">Santa fe</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <br>
+
+            </select>
+
+
+
+
+
+
+            <br>
+            <label for="imagen">Foto de perfil</label>
+            <input type="file" name="imagen" id="imagen" accept=".jpg, .png, .jpng, .pdf" multiple> <!-- subir mas de un archivos -->
+            <br>
+
+            <div class="botones">
+
+                <button type="submit"> <!-- botn para enviar datos -->
+                    Enviar Datos
+                </button>
+    
+                <button type="reset"> <!-- boton que limpia los inpust -->
+                    Borrar datos
+                </button>
+            </div>
+            
+        
             
         
 
         </form>
-        <h2>
+        <h2 class="roboto">
             Elemento en bloque
         </h2>
-        <h2>
+        <h2 class="roboto">
             Elemento en bloque
         </h2>
 
