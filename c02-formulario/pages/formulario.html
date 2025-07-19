@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- opcion 1 de link con js -->
+    <script src="../js/index.js"></script>
     <title>Formulario</title>
 </head>
 <body>
@@ -43,6 +46,20 @@
             <input type="number" name="edad" id="edad" placeholder="25" min="0" max="100" step="5"> 
             <!-- step: paso con el que se suma la edad, por defecto de 1 en 1 -->
 
+            <!-- opcion 3 -->
+
+            <script>
+                console.log("3. Estoy en la mitad del formulario");
+            </script>
+
+            <!-- css -->
+            <style>
+                br{
+                    margin: 10px;
+                }
+            </style>
+
+
             <label for="nacimiento">Fecha de nacimiento: </label>
             <input type="date" name="nacimiento" id="nacimiento" required>
             <br>
@@ -73,16 +90,11 @@
                 <option value="Mendoza">Mendoza</option>
                 <option value="Santa fe">Santa fe</option>
                 <option value="Buenos Aires">Buenos Aires</option>
-                <br>
-
+            
             </select>
-
-
-
-
-
-
             <br>
+
+            
             <label for="imagen">Foto de perfil</label>
             <input type="file" name="imagen" id="imagen" accept=".jpg, .png, .jpng, .pdf" multiple> <!-- subir mas de un archivos -->
             <br>
@@ -111,5 +123,8 @@
         </h2>
 
     </main>
+
+    <!-- opcion 2 de link con js  -->
+    <script src="../js/index.js"></script>
 </body>
 </html>
