@@ -24,7 +24,7 @@ console.log("============================================================");
 // ventanas en js
 
 //1.Alert: lanza una info al user
-alert("Bienvenido a nuestra App de Digitalers")
+alert('Bienvenido a nuestra App de Digitalers')
 
 // 2. Confirm: lanza una pregunta que requiere una repuesta
 var repuesta = confirm("Esta seguro de cerrar sesion")
@@ -44,3 +44,10 @@ console.log(nombrE);
 
 console.log("==================================================================");
 
+//Ejecucion de js con el comando node nombre del archivo. ej node index.js
+//No se ejecuta JS en la terminal cuando tiene funcionalidades del navegador
+
+//constante:no cambia el valor durante la ejecucion de la aplicacion
+const DNI = 123456789;
+//Las constantes no se pueden reasignar
+//DNI - 254896314; // tira un error en ejecucion
